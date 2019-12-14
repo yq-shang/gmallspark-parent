@@ -31,7 +31,7 @@ public class LogUploader {
         try{
             //不同的日志类型对应不同的URL logserver：日志服务器地址  log：路径
 
-            URL url  =new URL("http://logserver/log");
+            URL url  =new URL("http://logserver:8080/log");
 
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             //设置请求方式为post
